@@ -1,0 +1,11 @@
+package com.te.factorymethod;
+
+public class DomesticPlan extends Plan {
+
+	@Override
+	void setRate() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

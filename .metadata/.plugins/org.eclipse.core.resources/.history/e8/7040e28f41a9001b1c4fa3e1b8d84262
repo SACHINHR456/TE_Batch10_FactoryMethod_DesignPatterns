@@ -1,0 +1,13 @@
+package com.te.factorymethod;
+
+public abstract class Plan {
+double rate;
+public abstract void setRate();
+
+public float generateBill(float units)
+{
+	
+	return (float) (units*rate);
+}
+
+}

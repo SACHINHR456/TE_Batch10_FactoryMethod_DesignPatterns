@@ -1,0 +1,16 @@
+package com.tyss.dp.factoryMethod;
+
+public class DemoMain {
+
+	public static void main(String[] args) {
+
+		configure();
+		runBusinesLogic();
+	}
+  static void configure() {
+	System.out.println( System.getProperty("os.name"));
+ }
+  static void runBusinesLogic() {
+		 
+ }
+}

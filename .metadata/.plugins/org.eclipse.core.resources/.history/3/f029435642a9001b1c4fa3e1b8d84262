@@ -1,0 +1,15 @@
+package com.te.factorymethod;
+
+public abstract class Plan {
+	double rate;
+
+	public abstract void setRate();
+
+	public float generateBill(float units) {
+       
+		float soln= (float) (units*rate);
+		System.out.println(soln);
+		return  soln;
+	}
+
+}

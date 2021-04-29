@@ -1,0 +1,41 @@
+package com.tyss.dp.factoryMethod;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class WindowsButton implements Button {
+
+	JPanel panel = new JPanel();
+	JFrame frame = new JFrame();
+	JLabel lable = new JLabel();
+	JButton button;
+
+	@Override
+	public void rendering() {
+		lable = new JLabel("HelloWorld");
+		lable.setBackground(new Color(230, 245, 125));
+		lable.setLayout(new FlowLayout(FlowLayout.CENTER));
+		panel.setLayout(new FlowLayout(FlowLayout.CENTER));
+		frame.getContentPane().add(panel);
+		panel.add(lable);
+		panel.add(button);
+		
+		frame.setSize(320,300);
+		frame.setVisible(true);
+
+		onClicking();
+
+	}
+
+	@Override
+	public void onClicking() {
+     button=new JButton("Exit");
+     System.out.println("Exit button clicked");
+	}
+
+}
